@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
-class bhumistar extends StatefulWidget {
-  const bhumistar({Key? key}) : super(key: key);
+class Bhumistar extends StatefulWidget {
+  const Bhumistar({Key? key}) : super(key: key);
 
   @override
-  _bhumistarState createState() => _bhumistarState();
+  _BhumistarState createState() => _BhumistarState();
 }
 
-class _bhumistarState extends State<bhumistar> {
+class _BhumistarState extends State<Bhumistar> {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-        child:WebviewScaffold(
-          url: 'https://bhumistar.com',
+        child:WebView(
+          initialUrl: 'https://bhumistar.com',
 
         )
     );
